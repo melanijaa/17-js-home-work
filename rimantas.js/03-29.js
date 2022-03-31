@@ -1,17 +1,6 @@
-/*
-Kintamųjų inicijavimas
 
-1. Sukurti 3 kintamuosius su skaičiaus tipo reikšmėmis
-- Po kiekvieno jų inicijavimo, išvesti į console
-2. Sukurti 3 kintamuosius su teksto tipo reikšmėmis
-- Po kiekvieno jų inicijavimo, išvesti į console
-3. Sukurti 3 sąrašo tipo kintamuosius su penkiomis skaičių tipo reikšmėmis
-- Po kiekvieno jų inicijavimo, išvesti į console
-4. Sukurti 3 sąrašo tipo kintamuosius su penkiomis teksto tipo reikšmėmis
-- Po kiekvieno jų inicijavimo, išvesti į console
-*/
+console.log('------Kintamuju inicijavimas-----')
 
-console.log('---1---')
 const myLuckyNumberIs = 4;
 console.log('Lucky number:', myLuckyNumberIs);
 
@@ -21,7 +10,6 @@ console.log('Apples in a basket:', apples);
 const pinigine = 100;
 console.log('Pinigine:', pinigine);
 
-console.log('---2---')
 const pavarde = 'Cruncky';
 const pasisveikinimas = `Sveiki atvykę ${pavarde}.`;
 console.log(pasisveikinimas);
@@ -30,27 +18,25 @@ const name = 'John';
 const lastName = 'Smith';
 const age = 79;
 const homeTown = 'New York';
-const giftBasket = `Resipient ${name} ${lastName} is ${age} years old from ${homeTown}`
+const giftBasket = `Resipient ${name} ${lastName} is ${age} years old from ${homeTown}.`
 console.log(giftBasket);
 
 const billingAdress = 'Nature Valley, Hong Kong';
-const billingDue = 2022-03-31;
-const bill = `Billing adress is ${billingAdress} and it's due to ${billingDue}`;
+const billingDue = '2022-03-31';
+const bill = `Billing adress is ${billingAdress} and it's due to ${billingDue}.`;
 console.log(bill);
 
-console.log('---3---')
 const pazymiai = [10, 4, 8, 9, 7];
 console.log('Klases pazymiai:', pazymiai);
 
-const cleanRooms = [102, 306, 707, 087, 01]
+const cleanRooms = [102, 306, 707, 87, 1]
 console.log('Clean rooms available:', cleanRooms);
 
-const data = [2022, 03, 31];
-const time = [09, 26]
-const dataTime = `The time is ${time} and todays date is ${data}`;
-console.log(dataTime);
+const kidsFavouriteNumbers = [123, 3, 78, 98];
+const myFavouriteNumber = [26]
+const favouriteNumber = `My favourite number is ${[myFavouriteNumber]} and the kids said they like ${kidsFavouriteNumbers}.`;
+console.log(favouriteNumber);
 
-console.log('---4---')
 const fruits = ['banana', 'kiwi', 'apple', 'orange', 'pear'];
 console.log('What fresh fruit do we have?', fruits);
 
@@ -60,48 +46,123 @@ console.log('What is the quest list for tonight?', questslist);
 const computerBrands = ['Apple', 'Asus', 'Orion', 'Samsung', 'Lenovo'];
 console.log('Computer brands we have:', computerBrands);
 
-/*
-Veiksmai su kintamaisiais
-
-1. Susumuoti visus skaičiaus tipo kintamuosius
-- Rezultatą išvesti į console
-2. Sujungti visus teksto tipo kintamuosius taip, jog tarp jų būtų sudarytas tarpas
-- Rezultatą išvesti į console
-3. Apskaičiuoti vertę iš sąrašų kurių verčių tipas yra skaičiai, pagal pateiktą logiką
-- 1-2+3-4+5
-- Rezultatą išvesti į console
-4. Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas
-*/
-
-console.log('---1---')
-let a = 0;
-a = a + 3;
-a += 3;
-console.log(a);
+console.log('-----Veiksmai su kintamaisiais-----')
 
 let b = 7;
+//b = b + 7;
 b += 7;
 console.log(b);
+
+let c = 10;
+let d = 50;
+let e = 3456;
+let f = 10000;
+d = c + d + e + f;
+console.log(d);
+
+const g = 89;
+const h = 645;
+const rez = g * h;
+const ats = `${g} * ${h} = ${rez}`;
+console.log(ats);
+
+const myCatsName = 'Saule';
+const myDogsName = 'Amsis';
+console.log(`My cats name is ${myCatsName} and my dogs name is ${myDogsName}.`);
+
+const numbers = [1, 2, 3, 4, 5];
+console.log('Numbers:', numbers)
+const numberValue = 1 - 2 + 3 - 4 + 5;
+console.log(numberValue);
+
+const carsOwned = ['Honda', 'Audi', 'BMV'];
+const carsToBuy = ['Porsche', 'Tesla', 'Toyota'];
+carsOwnedAsStrings = carsOwned.join(', ');
+carsToBuyAsStrings = carsToBuy.join(', ');
+console.log(`Old cars ${carsOwnedAsStrings} and new cars ${carsToBuyAsStrings}.`);
+
+console.log('-----Kintamųjų palyginimas-----')
+
+const o = 10;
+const k = 15;
+if (o > k) {
+    console.log('Pomidoras');
+}   else {
+        console.log('Bandykite kitą kartą.');
+}
+if (o < k) {
+    console.log('Pomidoras');
+}   else {
+    console.log('Bandykite kitą kartą.');
+}
+if (o === k) {
+    console.log('Pomidoras');
+}   else {
+    console.log('Bandykite kitą kartą.');
+}
+if (o !== k) {
+    console.log('Pomidoras');
+}   else {
+    console.log('Bandykite kitą kartą.');
+}
+if (o >= k) {
+    console.log('Pomidoras');
+}   else {
+    console.log('Bandykite kitą kartą.');
+}
+
+if (o <= k) {
+    console.log('Pomidoras');
+}   else {
+    console.log('Bandykite kitą kartą.');
+}
+
+const telNumber = [8, 1, 7, 6, 8, 4, 2, 5, 9];
+console.log('Telefono numeris:', telNumber);
+
+const telNumberLength = telNumber.length;
+console.log('Telefono numerio ilgis yra', telNumber[telNumber.length - 1], 'skaičiai');
+
+const tekstas = 'Slove Ukrainai';
+const zodis = 'Kakavos puodelis';
+console.log(`${tekstas} ${tekstas.length}`);
+console.log(`${zodis} ${zodis.length}`);
+
+if (tekstas > zodis) {
+    console.log('Pomidoras')
+} else {
+    console.log('Bandykite kitą kartą.')
+}
+if (tekstas < zodis) {
+    console.log('Pomidoras')
+} else {
+    console.log('Bandykite kitą kartą.')
+}
+if (tekstas === zodis) {
+    console.log('Pomidoras')
+} else {
+    console.log('Bandykite kitą kartą.')
+}
+if (tekstas !== zodis) {
+    console.log('Pomidoras')
+} else {
+    console.log('Bandykite kitą kartą.')
+}
+if (tekstas >= zodis) {
+    console.log('Pomidoras')
+} else {
+    console.log('Bandykite kitą kartą.')
+}
+if (tekstas <= zodis) {
+    console.log('Pomidoras')
+} else {
+    console.log('Bandykite kitą kartą.')
+}
 
 /*
 Kintamųjų palyginimas
 Lyginant, jei rezultatas tenkina palyginimo sąlygą, tai į console išvesti žodį “Pomidoras”, o jei sąlyga nėra tenkinama, išvesti sakinį “Bandykite kitą kartą.”.
 
-1. Tarpusavyje palyginti skaičiaus tipo kintamuosius:
-- kuris didesnis
-- kuris mažesnis
-- ar jie lygūs
-- ar jie nelygūs
-- kuris didesnis arba lygus
-- kuris mažesnis arba lygus
-2. Išvesti teksto tipo kintamųjų ilgius
-3. Tarpusavyje palyginti teksto tipo kintamųjų ilgius:
-- kuris didesnis
-- kuris mažesnis
-- ar jie lygūs
-- ar jie nelygūs
-- kuris didesnis arba lygus
-- kuris mažesnis arba lygus
 4. Išvesti sąrašo tipo kintamųjų ilgius
 5. Tarpusavyje palyginti sąrašo tipo kintamųjų ilgius:
 - kuris didesnis
