@@ -55,7 +55,7 @@ function visuSkaiciuSuma (f) {
     }
     return sum;
 }
-console.log(visuSkaiciuSuma(815));
+console.log(visuSkaiciuSuma(100));
 
 /*
 6.Parašykite funkciją, kuri priimtų skaičių ir suskaičiuotų, iš kiek sveikų skaičių jos argumentas dalijasi be liekanos (išskyrus vienetą ir patį save).
@@ -70,25 +70,25 @@ function liekana(g, h, j) {
     }
     return `Sveikų skaičių intervale nuo ${g} iki ${h}, besidalijančių be liekanos (išskyrus vienetą ir patį save) iš ${j} yra ${count} vienetai.`;
 }
-
-console.log(liekana(-34, 678, 3));
+console.log(liekana(0, 13, 3));
 
 /*
 7.Parašyti funkciją, kuri priimtų vieną kintamąjį-tekstą. Funkcija turi išvesti tekstą į ekraną ir dar papildomai parodyti jo ilgį(simbolių kiekį).
 */
 
-const tekstas1 = 'Bananai, mandarinai ir obuoliai yra nemėgstamiausi mano mamos vaisiai.'
 function tekstoIlgis (tekstas1) {
-    for (i = 0; i <= tekstas1.length; i++) {
-        return `${tekstas1} ${tekstas1.length}`
-    }
+    return `Sakinys - "${tekstas1}", turi ${tekstas1.length} simboliu.`
 }
+console.log(tekstoIlgis('Bananai, mandarinai ir obuoliai yra nemėgstamiausi mano mamos vaisiai'));
 
 /*
-8.Parašyti funkcijątelefonoNumeris, kuri priima vieną kintamąjį–masyvą su 10 skaičių jame.Funkcija turi grąžinti telefono numerį tokiu formatu -"(XXX) XXX-XXXX".
+8.Parašyti funkciją telefonoNumeris, kuri priima vieną kintamąjį–masyvą su 10 skaičių jame. Funkcija turi grąžinti telefono numerį tokiu formatu -"(XXX) XXX-XXXX".
 */
 
-
+function telefonoNumeris (tel, efo, no) {
+    return `Mano telefono numeris yra (${tel})${efo}-${no}`
+}
+console.log(telefonoNumeris(860, 653, 9177))
 
 /*
 9.Parašyti funkciją, kuri priimtų du kintamuosius-tekstus.Palyginti kuris tekstas yra ilgesnis.
@@ -110,16 +110,13 @@ console.log(atsText);
 10.Parašyti funkciją, kuri priimtų vieną kintamąjį-tekstą.Suskaičiuoti, kiek tekste yra ‚a‘ raidžių.
 */
 
-
-/*
-const tekstas = 'Ananasas ir arbūzas yra mano mamos mėgstamiausi vaisiais'
-let count = 0;
-for ( let i = 0; i <= tekstas.length; i++) {
-    if ( i === 'a') {
-        count += 1
+function suskaiciuok(tekstas) {
+    const container = {};
+    for (let i = 0; i < tekstas.length; i++) {
+        const a = tekstas[i];
+        container[a] = (container[a] || 0) + 1
     }
+    return container;
 }
-console.log(count);
-const text1 = 'Ananasas ir arbūzas yra mano mamos mėgstamiausi vaisiais.'
-const text2 = 'Bananai, mandarinai ir obuoliai yra nemėgstamiausi mano mamos vaisiai.'
-*/
+
+console.log(suskaiciuok('ananasas ir arbūzas yra mano mamos mėgstamiausi vaisiais.'));
