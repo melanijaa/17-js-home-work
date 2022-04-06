@@ -56,7 +56,6 @@ function visuSkaiciuSuma (f) {
         } return sum;
     }
 }
-
 console.log(visuSkaiciuSuma(100));
 
 /*
@@ -112,13 +111,13 @@ console.log(atsText);
 10.Parašyti funkciją, kuri priimtų vieną kintamąjį-tekstą.Suskaičiuoti, kiek tekste yra ‚a‘ raidžių.
 */
 
-function suskaiciuok(tekstas) {
+function suskaiciuok2(tekstas2) {
     const container = {};
-    for (let i = 0; i < tekstas.length; i++) {
-        const a = tekstas[i];
+    for (let i = 0; i < tekstas2.length; i++) {
+        const a = tekstas2[i];
         container[a] = (container[a] || 0) + 1
     }
     return container;
 }
 
-console.log(suskaiciuok('ananasas ir arbūzas yra mano mamos mėgstamiausi vaisiais.'));
+console.log(suskaiciuok2('ananasas ir arbūzas yra mano mamos mėgstamiausi vaisiais.'));
