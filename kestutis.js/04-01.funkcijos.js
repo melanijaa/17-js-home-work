@@ -49,12 +49,14 @@ console.log(res);
 */
 
 function visuSkaiciuSuma (f) {
-    let sum = 0;
-    for (let i = 1; i <= f; i++) {
-        sum += i;
+    if (f > 1) {
+        let sum = 0;
+        for (let i = 0; i <= f; i++) {
+            sum += i;
+        } return sum;
     }
-    return sum;
 }
+
 console.log(visuSkaiciuSuma(100));
 
 /*
