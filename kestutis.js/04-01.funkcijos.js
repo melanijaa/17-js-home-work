@@ -66,8 +66,8 @@ console.log(visuSkaiciuSuma(100));
 
 function liekana(g) {
     let count = 0;
-    for (let i = 0; i < g; i++) {
-        if (g % i === 0 && i !== 1) {
+    for (let i = 2; i < g; i++) {
+        if (g % i === 0) {
             count++
         }
     }
