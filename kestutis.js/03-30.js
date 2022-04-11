@@ -52,11 +52,11 @@ let b = 13;
 if (a > b) {
     a--;
     b++;
-    console.log(`${a} ${b}`);
+    console.log(`${a} > ${b}`);
 } else if (a < b) {
     a++;
     b--;
-    console.log(`${a} ${b}`);
+    console.log(`${a} < ${b}`);
 } else {
     console.log('Skaiciai yra lygus.');
 }
