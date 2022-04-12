@@ -2,7 +2,7 @@
 1.Generuoti atsitiktinius skaičius nuo 1 iki 10 tol, kol skaičių suma bus mažesnė už 100.
 */
 
-//neiseina padaryti, kad butu maziau 100
+console.log('---neiseina padaryti, kad butu maziau 100---')
 let a = 0;
 while (a < 100) {
      let b = Math.floor(Math.random() * 10);
@@ -45,7 +45,7 @@ while (e !== 5) {
 5. Naudojant ciklą atspausdinti skirtingus atsitiktinius skaičius nuo 0 iki 10 (vienas skaičius vienoje eilutėje). Paskutinis atspausdintas skaičius turi būti 5 arba 7; Suskaičiuoti kiek ciklų prasisuko.
 */
 
-//sąlygoje parašyta, 5 arba 7, bet jei rašau (f !== 5 || f !== 7) tada ciklas varo be sustojimo.
+console.log('---sąlygoje parašyta, 5 arba 7, bet jei rašau (f !== 5 || f !== 7) tada ciklas varo be sustojimo---')
 
 let f = 0;
 let g = 0;
